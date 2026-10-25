@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Agenda Semanal</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista Diaria - Agenda Semanal</title>
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/slider.css">
+  <link rel="stylesheet" href="./styles/day-card.css">
+</head>
+<body>
+
+  <!-- Encabezado principal de la aplicación -->
+  <header class="main-header">
+    <h1>Lista Diaria</h1>
+    <p id="current-date-display">Cargando fecha actual...</p>
+  </header>
+
+  <!-- Contenedor principal donde se inyectará el slider de los 7 días -->
+  <main id="app">
+    <!-- El carrusel de 7 ventanas (WeekSlider) se montará aquí mediante JS -->
+  </main>
+
+  <!-- Script principal (ES Module) -->
+  <script type="module" src="./src/index.js"></script>
+</body>
 </html>

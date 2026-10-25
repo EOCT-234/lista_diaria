@@ -1,36 +1,28 @@
-mi-agenda-app/
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── assets/                # Imágenes, íconos (SVG) y estilos globales
-│   │   ├── icons/             # Flechas de deslizamiento, checks, etc.
-│   │   └── styles/
-│   │       └── main.css       # Estilos globales y variables CSS
-│   │
-│   ├── components/            # Componentes reutilizables de la interfaz (UI)
-│   │   ├── Header/            # Encabezado con la fecha actual
-│   │   │   └── Header.jsx
-│   │   ├── Slider/            # Contenedor deslizante principal
-│   │   │   └── WeekSlider.jsx
-│   │   ├── DayCard/           # La "ventana" de cada día de la semana
-│   │   │   ├── DayCard.jsx
-│   │   │   └── DayCard.module.css
-│   │   ├── TaskItem/          # Cada actividad dentro del día
-│   │   │   └── TaskItem.jsx
-│   │   └── TaskModal/         # Formulario emergente para ingresar actividades
-│   │       └── AddTaskModal.jsx
-│   │
-│   ├── hooks/                 # Lógica personalizada (Lógica de la app)
-│   │   ├── useWeekDays.js     # Controla la rotación continua de los 7 días
-│   │   └── useTaskMigration.js# Lógica que pasa tareas pendientes al día siguiente
-│   │
-│   ├── utils/                 # Funciones auxiliares y de fecha
-│   │   ├── dateHelpers.js     # Formatear fechas, detectar el día de hoy
-│   │   └── storage.js         # Guardar y cargar datos (LocalStorage / API)
-│   │
-│   ├── App.jsx                # Componente principal donde se une todo
-│   └── main.jsx               # Punto de entrada de la aplicación
+lista_diaria/
+├── index.html                  # HTML principal de la aplicación
+├── package.json                # Configuración y dependencias (si usas Node/npm)
+├── README.md                   # Notas y descripción del proyecto
 │
-├── .gitignore
-├── package.json
-└── README.md
+├── styles/                     # Estilos CSS
+│   ├── global.css              # Reset, fuentes, variables de colores
+│   ├── slider.css              # Estilos para las 7 ventanas deslizantes
+│   └── day-card.css            # Estilos de cada tarjeta de día y sus tareas
+│
+├── components/                 # Componentes de la interfaz de usuario
+│   ├── Header/                 # Muestra el día actual y título
+│   │   └── Header.js
+│   ├── WeekSlider/             # Contenedor deslizante (carrusel de 7 días)
+│   │   └── WeekSlider.js
+│   ├── DayCard/                # Ventana individual para un día
+│   │   └── DayCard.js
+│   └── TaskList/               # Formulario para añadir tareas y lista
+│       ├── TaskItem.js
+│       └── TaskForm.js
+│
+├── services/                   # Lógica de datos y almacenamiento
+│   ├── storage.js              # Guarda y lee datos de LocalStorage
+│   └── taskRollover.js         # Pasa tareas incompletas al siguiente día
+│
+└── utils/                      # Funciones auxiliares
+    ├── dateHelpers.js          # Cálculos de fechas, día actual y rotación
+    └── constants.js            # Nombres de días, meses y configuraciones
