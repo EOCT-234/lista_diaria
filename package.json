@@ -1,0 +1,6 @@
+{
+  "name": "lista_diaria",
+  "version": "1.0.0",
+  "description": "Aplicación de gestión diaria con carrusel de 7 días",
+  "type": "module"
+}

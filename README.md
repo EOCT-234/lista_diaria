@@ -2,6 +2,7 @@ lista_diaria/
 ├── index.html                  # HTML principal de la aplicación
 ├── package.json                # Configuración y dependencias (si usas Node/npm)
 ├── README.md                   # Notas y descripción del proyecto
+├── index.js                   
 │
 ├── styles/                     # Estilos CSS
 │   ├── global.css              # Reset, fuentes, variables de colores
