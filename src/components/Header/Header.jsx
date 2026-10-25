@@ -30,7 +30,7 @@ export const Header = ({ onOpenAddTaskModal }) => {
       </button>
 
       {/* Estilos específicos del Header */}
-      <style jsx>{`
+      <style jsx>{
         .app-header {
           display: flex;
           justify-content: space-between;
@@ -98,7 +98,7 @@ export const Header = ({ onOpenAddTaskModal }) => {
             justify-content: center;
           }
         }
-      `}</style>
+    }</style>
     </header>
   );
 };

@@ -78,7 +78,7 @@ export const WeekSlider = ({
       </div>
 
       {/* Estilos específicos para el Slider */}
-      <style jsx>{`
+      <style jsx>{
         .slider-wrapper {
           display: flex;
           flex-direction: column;
@@ -143,7 +143,7 @@ export const WeekSlider = ({
           padding: 0.5rem 0.25rem 1.5rem 0.25rem;
           scroll-behavior: smooth;
         }
-      `}</style>
+      }</style>
     </section>
   );
 };

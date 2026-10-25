@@ -39,7 +39,7 @@ export const TaskItem = ({
       </button>
 
       {/* Estilos específicos para TaskItem */}
-      <style jsx>{`
+      <style jsx>{
         .task-item {
           display: flex;
           align-items: center;
@@ -96,7 +96,7 @@ export const TaskItem = ({
           opacity: 1;
           color: #ef4444; /* Color rojo para eliminar */
         }
-      `}</style>
+      }</style>
     </li>
   );
 };

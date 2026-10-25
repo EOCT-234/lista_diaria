@@ -93,7 +93,7 @@ export const AddTaskModal = ({
       </div>
 
       {/* Estilos específicos para AddTaskModal */}
-      <style jsx>{`
+      <style jsx>{
         .modal-overlay {
           position: fixed;
           top: 0;
@@ -222,7 +222,7 @@ export const AddTaskModal = ({
         .btn-submit:hover {
           background-color: var(--accent-hover);
         }
-      `}</style>
+      }</style>
     </div>
   );
 };
