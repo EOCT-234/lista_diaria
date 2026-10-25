@@ -37,66 +37,6 @@ export const TaskItem = ({
       >
         &times;
       </button>
-
-      {/* Estilos específicos para TaskItem */}
-      <style jsx>{
-        .task-item {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          padding: 0.65rem 0.8rem;
-          background-color: var(--bg-secondary);
-          border: 1px solid var(--border-color);
-          border-radius: var(--radius-sm);
-          transition: background-color var(--transition-fast), opacity var(--transition-fast);
-        }
-
-        .task-item:hover {
-          border-color: var(--text-muted);
-        }
-
-        .task-checkbox-container {
-          display: flex;
-          align-items: center;
-          cursor: pointer;
-        }
-
-        .task-checkbox-container input {
-          width: 18px;
-          height: 18px;
-          accent-color: var(--accent-color);
-          cursor: pointer;
-        }
-
-        .task-content {
-          display: flex;
-          flex-direction: column;
-          gap: 0.2rem;
-          flex: 1;
-          overflow: hidden;
-        }
-
-        .task-title {
-          font-size: 0.9rem;
-          color: var(--text-primary);
-          word-break: break-word;
-        }
-
-        .btn-delete-task {
-          color: var(--text-muted);
-          font-size: 1.2rem;
-          line-height: 1;
-          padding: 0 0.25rem;
-          border-radius: 4px;
-          opacity: 0.5;
-          transition: opacity var(--transition-fast), color var(--transition-fast);
-        }
-
-        .btn-delete-task:hover {
-          opacity: 1;
-          color: #ef4444; /* Color rojo para eliminar */
-        }
-      }</style>
     </li>
   );
 };
