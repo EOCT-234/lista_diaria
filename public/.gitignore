@@ -1,0 +1,32 @@
+# Dependencias
+node_modules/
+/.pnp
+.pnp.js
+
+# Producción / Archivos compilados
+dist/
+build/
+*.out
+
+# Archivos de entorno y claves
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archivos del sistema y del editor/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Caché de React / Vite
+.vite/
+.eslintcache
